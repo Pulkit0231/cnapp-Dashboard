@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9eff6;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    padding: 20px;
+    background-color: #e9eff6;
+}
+
+.dashboard-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dashboard-content {
+    height: 79vh;
+    overflow-y: scroll;
+}
+
+.dashboard-content::-webkit-scrollbar {
+    width: 7px;
+}
+
+.dashboard-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.dashboard-content::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.dashboard-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.dashboard-container::-webkit-scrollbar-button {
+    display: none;
+}
+
+.category {
+    margin-bottom: 30px;
+
+}
+
+.category-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+
+}
+
+.widgets-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.widget-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 0 20px 20px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 27%;
+    margin: 10px;
+}
+
+.widget-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.widget-card p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.no-data {
+    color: #aaa;
+    font-size: 14px;
+    text-align: center;
+}
+
+.add-widget-button {
+    display: inline-flex;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: #f5f7f9;
+    border-radius: 8px;
+    border: 2px dashed #d3d7de;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.add-widget-button:hover {
+    background-color: #e6e9ec;
+}
+
+.new-widget {
+    margin: 20px 0 30px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0 30px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}

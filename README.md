@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# React Dashboard Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a dynamic dashboard built with React that allows users to manage various widgets across different categories. Users can add, remove, and search for widgets in real time, making the dashboard highly customizable and interactive.
 
-## Available Scripts
+## Table of Contents
+Getting Started
 
-In the project directory, you can run:
+Project Structure
 
-### `npm start`
+* Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Functionality
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* JSON Structure
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run this project locally, you need to have the following installed on your machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Node.js (version 14.x or higher)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm (Node Package Manager)
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/yourusername/react-dashboard.git
+cd react-dashboard
+```
+2. Install the dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
+3. Start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
+This will run the app in development mode. Open http://localhost:3000 to view it in the browser.
 
-## Learn More
+## Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Dynamic Widgets: Users can dynamically add and remove widgets from categories.
+* Category Management: Widgets are grouped into categories. Users can choose which widgets to display within each category.
+* Search Functionality: A search input allows users to filter widgets by name.
+* Responsive Design: The dashboard is styled to be responsive and user-friendly.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Functionality
 
-### Code Splitting
+1. Adding Widgets:
+* Users can click the "Add Widget" button to open a modal.
+* In the modal, users can select widgets from different categories to add to the dashboard.
+* Initially, all widgets are selected by default.
+* Users can check or uncheck widgets as needed.
+* When the user clicks "Confirm," the selected widgets are added to the corresponding categories on the dashboard.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Removing Widgets:
+* Each widget on the dashboard has a "Remove" button (represented by a cross icon).
+* Clicking the "Remove" button will remove the widget from the dashboard.
+* Widgets can also be removed from the dashboard by unchecking them in the "Add Widget" modal and clicking "Confirm."
 
-### Analyzing the Bundle Size
+3. Search Functionality:
+* Users can search for widgets using the search input located on the dashboard.
+* The search is case-insensitive and will dynamically filter widgets based on the user's input.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. JSON-based Configuration:
+* The dashboard's structure, including categories and widgets, is defined in a 
+ 'dashboardData.json' file.
+* This allows for easy customization and scalability of the dashboard by simply editing the JSON data.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
